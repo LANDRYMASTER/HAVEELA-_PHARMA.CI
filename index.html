@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Haveela Pharma</title>
+</head>
+<body class="bg-gray-100 overflow-x-hidden ">
+
+  <header class="sticky top-0 left-0 z-50 ">
+    <nav id="nav" class="bg-[#4a86b0] shadow-md w-full py-4">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          
+          <!-- Logo -->
+          <div class="flex-shrink-0 flex justify-center items-center">
+            <img id="logo" src="IMG/logo.png" alt="Logo Entreprise">
+            <a href="#" class="text-2xl font-bold text-white">Haveela Pharma</a>
+          </div>
+  
+          <!-- Menu normal -->
+          <div class="hidden md:flex flex-1 justify-center space-x-8">
+            <a href="#" class="text-white hover:text-white " id="active">Accueil</a>
+            <a href="#" class="text-white hover:text-white ">Services</a>
+            <a href="Produits.html" class="text-white hover:text-white ">Produits</a>
+            <a href="#" class="text-white hover:text-white ">À propos</a>
+            <a href="#" class="text-white hover:text-white ">Contact</a>
+          </div>
+  
+          <!-- Bouton hamburger / croix -->
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-gray-700 focus:outline-none">
+              <!-- Icône menu -->
+              <svg id="menu-open" class="h-6 w-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!-- Icône croix -->
+              <svg id="menu-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+  
+        </div>
+      </div>
+  
+      <!-- Menu mobile -->
+      <div id="menu" class="overflow-hidden max-h-0 md:hidden px-4 bg-white text-center">
+          <a href="#" class="block text-gray-400 py-2 hover:text-blue-600 " id="active">Accueil</a>
+          <a href="#" class="block text-gray-400 py-2 hover:text-blue-600 ">Services</a>
+          <a href="Produits.html" class="block text-gray-400 py-2 hover:text-blue-600 ">Produits</a>
+          <a href="#" class="block text-gray-400 py-2 hover:text-blue-600 ">À propos</a>
+          <a href="#" class="block text-gray-400 py-2 hover:text-blue-600 ">Contact</a>
+        </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="cover1">
+    <div id="flooter" class="">
+      <!-- Texte à droite -->
+      <div class="bg-[rgba(0,0,0,0.3)] max-w-3xl p-6 rounded-lg flex flex-col items-center">
+        <h1 id="infosup" class="text-6xl text-gray-100 text-center">Nous vous offrons <br> des solutions sur mesure</h1>
+        <p class="text-center text-white m-4 text-3xl ">HAVEELA Pharma est spécialisée dans la représentation pharmaceutique et la promotion médicale. Présente en Afrique de l'ouest: à Abidjan en Cote d’Ivoire .</p>
+        <a id="CTA" href="#services" class="text-2xl bg-blue-500 rounded-2xl p-4 px-8 text-white hover:bg-orange-700">Découvrir nos services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section A propos -->
+
+  <section class="bg-[#b5c7d4] text-black py-24 px-6 sm:px-10">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+  
+      <!-- Image à gauche -->
+      <div id="divpropos" class="md:w-1/2 w-full Imgpropos">
+        <img src="IMG/Propos.jpg" 
+             alt="À propos HAVEELA" 
+             class="w-full rounded-3xl shadow-2xl hover:scale-105 transition duration-500 ease-in-out">
+      </div>
+  
+      <!-- Texte à droite -->
+      <div class="md:w-1/2 w-full">
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-8 leading-tight">
+          À propos de <span class="text-cyan-500">HAVEELA Pharma</span>
+        </h2>
+        <p class="text-black text-lg sm:text-2xl leading-relaxed mb-8">
+          HAVEELA Pharma s'engage à transformer le paysage pharmaceutique avec des solutions innovantes, personnalisées et fiables.
+          Notre mission est d’accompagner les professionnels de santé à chaque étape de leur croissance, tout en contribuant au bien-être des populations.
+        </p>
+        <a href="Produits.html" class="inline-block bg-cyan-600 hover:bg-cyan-500 text-white px-8 border-[#e9ef33] border-solid border-2 py-4 text-lg rounded-xl shadow-lg transition-all duration-300">
+          Voir nos produits
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section A propos -->
+  
+  <section class="bg-gray-950 text-white py-12 px-6 space-y-32">
+    <!-- Titre principal -->
+    <div class="max-w-7xl mx-auto text-center mb-4">
+      <h2 class="text-4xl sm:text-5xl font-extrabold mb-6">Notre Expertise</h2>
+      <p class="text-gray-400 text-lg">
+        Des solutions fiables, innovantes et adaptées à vos besoins pharmaceutiques
+      </p>
+    </div>
+  
+    <!-- Bloc 1 -->
+    <div class="max-w-6xl mx-auto my-12 flex flex-col md:flex-row items-center gap-12">
+      <img src="IMG/expertise1.jpg" alt="Recherche" class="rounded-2xl w-full md:w-1/2 shadow-lg hover:scale-105 transition duration-500 ease-in-out">
+      <div class="md:w-1/2">
+        <h3 class="text-3xl font-bold text-cyan-400 mb-4">L’Excellence Guidée par l’Expérience</h3>
+        <p class="text-gray-300 text-lg md:text-2xl">
+          Maitrise du marketing pharmaceutique et de la santé publique à travers notre expérience professionnelle.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Bloc 2 -->
+    <div class="max-w-6xl mx-auto my-12 flex flex-col md:flex-row-reverse items-center gap-12">
+      <img src="IMG/expertise2.jpg" alt="Distribution" class="rounded-2xl w-full md:w-1/2 shadow-lg hover:scale-105 transition duration-500 ease-in-out">
+      <div class="md:w-1/2">
+        <h3 class="text-3xl font-bold text-cyan-400 mb-4">Maîtrise Totale du Circuit du Médicament en Côte d’Ivoire</h3>
+        <p class="text-white-300 text-lg md:text-2xl">
+          Maitrise de tous les aspect du circuit du médicament en cote d’ivoire.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Bloc 3 -->
+    <div class="max-w-6xl mx-auto my-12 flex flex-col md:flex-row items-center gap-12">
+      <img src="IMG/expertise3.jpg" alt="Support" class="rounded-2xl w-full md:w-1/2 shadow-lg hover:scale-105 transition duration-500 ease-in-out">
+      <div class="md:w-1/2">
+        <h3 class="text-3xl font-bold text-cyan-400 mb-4">La Fluidité de l’Approvisionnement, Notre Force</h3>
+        <p class="text-gray-300 text-lg md:text-2xl">
+          Maitrise de la chaine approvisionnement des produits de santé et des cosmétiques.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Section coordonnées & réseaux -->
+  <section class=" text-center text-white bg-[#a30006]">
+  <h2 class="text-2xl sm:text-3xl font-bold mb-6">Contactez-nous</h2>
+  <div class="flex justify-evenly">
+    <div class="text-gray-300 text-sm mb-4 space-y-2">
+      <a href="https://www.google.com/maps/place/Abidjan" target="_blank" class="block hover:text-cyan-400 text-white transition duration-300 font-bold">
+        📍 Abidjan, Côte d'Ivoire
+      </a>
+      <a href="tel:+2250123456789" class="block hover:text-cyan-400 transition text-white duration-300 font-bold">
+        📞 +225 01 23 45 67 89
+      </a>
+      <a href="mailto:contact@haveelapharma.com" class="block hover:text-cyan-400 text-white transition duration-300 font-bold">
+        ✉️ contact@haveelapharma.com
+      </a>
+    </div>
+    
+    <!-- Liens réseaux sociaux -->
+    <div class="flex justify-center gap-6 mt-6">
+      <a href="https://facebook.com" target="_blank" class="text-cyan-400 hover:scale-125 transition duration-500 ease-in-out">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48"><path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path></svg>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="text-pink-400 hover:scale-125 transition duration-500 ease-in-out">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48"><radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path></svg>
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="text-blue-400 hover:scale-125 transition duration-500 ease-in-out">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48"><path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"></path><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"></path><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path></svg>
+      </a>
+    </div>
+  </div>
+  </section>
+
+  <section id="gallery" class="overflow-hidden py-16">
+    <div id="translate" class="flex flex-col gap-6">
+        <div class="flex gap-8 -translate-x-40">
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+        </div>
+        <div class="flex gap-8">
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
+                <img src="" alt="forum">
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+  <section id="actualites" class="py-16 sm:py-24 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 sm:px-12 text-center">
+      <h2 class="text-3xl sm:text-4xl font-semibold mb-12">Dernières Actualités</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Article 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="image-article-1.jpg" alt="Article 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-4">Titre de l'actualité 1</h3>
+            <p class="text-gray-700 mb-4">Description courte de l'actualité 1. Cela peut être une introduction à l'article complet, invitant les utilisateurs à en savoir plus.</p>
+            <a href="#lien1" class="text-blue-600 hover:underline">Lire l'article</a>
+          </div>
+        </div>
+        <!-- Article 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="image-article-2.jpg" alt="Article 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-4">Titre de l'actualité 2</h3>
+            <p class="text-gray-700 mb-4">Description courte de l'actualité 2. Un aperçu intéressant pour attirer l'attention des visiteurs.</p>
+            <a href="#lien2" class="text-blue-600 hover:underline">Lire l'article</a>
+          </div>
+        </div>
+        <!-- Article 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="image-article-3.jpg" alt="Article 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-4">Titre de l'actualité 3</h3>
+            <p class="text-gray-700 mb-4">Description courte de l'actualité 3. Un résumé bref avec un lien pour plus d'informations.</p>
+            <a href="#lien3" class="text-blue-600 hover:underline">Lire l'article</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-16 sm:py-24 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-8">Notre équipe</h2>
+      <p class="text-lg text-gray-700 mb-12">Voici les membres passionnés qui composent notre équipe et contribuent à notre succès.</p>
+  
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
+        <!-- Employee 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="path/to/photo1.jpg" alt="Nom de l'employé 1" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Nom de l'Employé 1</h3>
+            <p class="text-gray-600 mb-4">Titre du poste</p>
+            <p class="text-gray-500">Une petite description ou citation qui reflète son rôle, ses passions ou son engagement.</p>
+          </div>
+        </div>
+  
+        <!-- Employee 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="path/to/photo2.jpg" alt="Nom de l'employé 2" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Nom de l'Employé 2</h3>
+            <p class="text-gray-600 mb-4">Titre du poste</p>
+            <p class="text-gray-500">Une petite description ou citation qui reflète son rôle, ses passions ou son engagement.</p>
+          </div>
+        </div>
+  
+        <!-- Employee 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="path/to/photo3.jpg" alt="Nom de l'employé 3" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Nom de l'Employé 3</h3>
+            <p class="text-gray-600 mb-4">Titre du poste</p>
+            <p class="text-gray-500">Une petite description ou citation qui reflète son rôle, ses passions ou son engagement.</p>
+          </div>
+        </div>
+  
+        <!-- Employee 4 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="path/to/photo4.jpg" alt="Nom de l'employé 4" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Nom de l'Employé 4</h3>
+            <p class="text-gray-600 mb-4">Titre du poste</p>
+            <p class="text-gray-500">Une petite description ou citation qui reflète son rôle, ses passions ou son engagement.</p>
+          </div>
+        </div>
+  
+        <!-- Employee 5 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="path/to/photo5.jpg" alt="Nom de l'employé 5" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Nom de l'Employé 5</h3>
+            <p class="text-gray-600 mb-4">Titre du poste</p>
+            <p class="text-gray-500">Une petite description ou citation qui reflète son rôle, ses passions ou son engagement.</p>
+          </div>
+        </div>
+  
+        <!-- Employee 6 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="path/to/photo6.jpg" alt="Nom de l'employé 6" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Nom de l'Employé 6</h3>
+            <p class="text-gray-600 mb-4">Titre du poste</p>
+            <p class="text-gray-500">Une petite description ou citation qui reflète son rôle, ses passions ou son engagement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="bg-gray-200 py-16 sm:py-12">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-2xl font-semibold mb-8">Ce que nos clients disent</h2>
+      <div class="flex flex-wrap justify-center space-x-8 sm:space-x-0 sm:space-y-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-72 sm:w-full">
+          <p class="text-lg text-gray-700 mb-4">"Un service exceptionnel, très professionnel !"</p>
+          <p class="font-bold text-gray-800">Client 1</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg w-72 sm:w-full">
+          <p class="text-lg text-gray-700 mb-4">"L'équipe a su répondre à toutes mes attentes."</p>
+          <p class="font-bold text-gray-800">Client 2</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg w-72 sm:w-full">
+          <p class="text-lg text-gray-700 mb-4">"Je recommande vivement leurs services !" </p>
+          <p class="font-bold text-gray-800">Client 3</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Bulle flottante -->
+  <div id="contact-bubble"
+    class="fixed bottom-[50%] right-4 bg-[#0013a3] text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl cursor-pointer shadow-lg hover:bg-blue-700 transition duration-300 z-50">
+  ?
+  </div>
+
+  <section>
+    <!-- Fenêtre de contact -->
+      <div id="contact-form"
+        class="fixed bottom-24 right-4 w-11/12 max-w-sm bg-gray-950 shadow-lg rounded-xl p-4 pt-12 space-y-3 border border-gray-200 transform scale-95 opacity-0 transition-all duration-300 ease-in-out pointer-events-none z-40">
+
+      <!-- Bouton fermer -->
+      <button id="close-btn"
+              class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-xl font-bold">
+        &times;
+      </button>
+
+      <h3 class="text-lg font-semibold text-center text-white mb-18"> Laissez nous un message </h3>
+      <input type="text" placeholder="Votre nom"
+              class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+      <input type="email" placeholder="Votre email"
+              class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+      <textarea placeholder="Votre message"
+                class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm h-24 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      <button
+        class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-300">
+        Envoyer
+      </button>
+    </div>
+  </section>
+  
+  
+  <footer class="bg-gray-800 text-white py-8 sm:py-6">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between">
+      <div>
+        <h3 class="text-xl sm:text-lg font-semibold">Contactez-nous</h3>
+        <p>Email: contact@haveelapharma.com</p>
+        <p>Téléphone: +225 01 23 45 67 89</p>
+      </div>
+      <div class="flex space-x-6 sm:space-x-8 mt-6 sm:mt-0">
+        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+        <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <p>&copy; 2025 Entreprise, Inc. Tous droits réservés.</p>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
