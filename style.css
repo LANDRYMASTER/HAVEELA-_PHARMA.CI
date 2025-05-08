@@ -6,19 +6,15 @@
 }
 
 #active {
-    color: #d07446;
+    color: #020019;
     font-weight: bold;
-    text-decoration: underline;
 }
 
 #logo {
     width: 60px;
     aspect-ratio: 1;
-    margin-right: 5px;
-}
-
-#nav {
-    border-bottom: 2px solid #e9ef33;
+    margin-right: 5px; 
+    color: #4a85b099;
 }
 
 #menu {
@@ -48,7 +44,7 @@ transition: max-height 0.3s ease-out;
     transition: 0.8s ease;
 }
 
-#flooter {
+#flooter_index {
     width: 100%;
     height: 85vh;
     display: flex;
@@ -60,6 +56,15 @@ transition: max-height 0.3s ease-out;
 #translate{
     animation: translate 150s infinite linear;
 }
+
+#translate img {
+    width: 400px;
+    height: 150px;
+    border-radius: 1px;
+
+
+}
+
 @keyframes translate {
     0%,100% {
         transform: translateX(0);
@@ -99,6 +104,25 @@ transition: max-height 0.3s ease-out;
     }
   }
 
+#contact-bubble {
+    right: -250px;
+    animation: fast 2s infinite linear;
+}
+
+#contact-bubble:hover {
+    right: 0;
+    animation: none;
+}
+
+@keyframes fast {
+    0% , 100%{
+        right: -200px;
+    }
+    80%{
+        right: -250px;
+    }
+}
+
 .details {
     width: 100%;
     min-height: 70vh;
@@ -126,3 +150,53 @@ transition: max-height 0.3s ease-out;
     }
 }
 
+.shine {
+    background: url(https://img.freepik.com/free-photo/african-american-woman-scientist-holding-test-tube-laboratory_839833-8926.jpg?t=st=1746522088~exp=1746525688~hmac=c5a3562ee5b9d9a37f30855e26f6eddf38fd4fe2235bbed857d37efbd0f06b41&w=1380);
+    background-size: cover;
+}
+
+.contact {
+    background-image: url(https://img.freepik.com/free-photo/medium-shot-bored-people-working_23-2150697629.jpg?t=st=1746609111~exp=1746612711~hmac=47f7e387088af9648fded141b06d5fd8e59b63ce3c06dc30d42264c63f32372c&w=1380);
+    background-size: cover;
+    background-position: 50%;
+}
+
+.produit {
+    background-image: url(https://img.freepik.com/free-photo/minimalistic-science-banner-with-pills_23-2149431123.jpg?t=st=1746710032~exp=1746713632~hmac=92c1fa8315cc3fb08bfaf65bf7125d530e114abadc72208a48e37d3bb118bc44&w=1380);
+    background-size: cover;
+    background-position: 50%;
+}
+
+#bubble-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+  }
+  
+  .bubble {
+    position: absolute;
+    background-color: rgba(0, 123, 255, 0.7);
+    bottom: 0;
+    border-radius: 50%;
+    animation: rise 5s linear infinite;
+  }
+  
+  @keyframes rise {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100vh);
+    }
+  }
+  

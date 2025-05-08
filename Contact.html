@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - HAVEELA Pharma</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-100">
+
+  <header class="sticky top-0 left-0 z-50 ">
+    <nav id="nav" class="bg-[#4a86b0] shadow-md w-full py-2">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          
+          <!-- Logo -->
+          <div class="flex-shrink-0 flex justify-center items-center">
+            <img id="logo" src="IMG/logo.png" alt="Logo Entreprise">
+            <a href="#" class="text-2xl font-bold text-white">Haveela Pharma</a>
+          </div>
+  
+          <!-- Menu normal -->
+          <div class="hidden md:flex flex-1 justify-center space-x-8">
+            <a href="index.html" class="text-white hover:text-white " >Accueil</a>
+            <a href="Services.html" class="text-white hover:text-white ">Services</a>
+            <a href="Produits.html" class="text-white hover:text-white ">Produits</a>
+            <a href="#" class="text-white hover:text-white ">À propos</a>
+            <a href="#" class="text-white hover:text-white " id="active">Contact</a>
+          </div>
+
+          <p id="heure" class="text-white text-lg font-mono"></p>
+  
+          <!-- Bouton hamburger / croix -->
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-gray-700 focus:outline-none">
+              <!-- Icône menu -->
+              <svg id="menu-open" class="h-6 w-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!-- Icône croix -->
+              <svg id="menu-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+  
+        </div>
+      </div>
+  
+      <!-- Menu mobile -->
+      <div id="menu" class="overflow-hidden max-h-0 md:hidden px-4 bg-white text-center">
+          <a href="index.html" class="block text-gray-400 py-2 hover:text-blue-600 " >Accueil</a>
+          <a href="Services.html" class="block text-gray-400 py-2 hover:text-blue-600 ">Services</a>
+          <a href="Produits.html" class="block text-gray-400 py-2 hover:text-blue-600 ">Produits</a>
+          <a href="#" class="block text-gray-400 py-2 hover:text-blue-600 ">À propos</a>
+          <a href="#" class="block text-gray-400 py-2 hover:text-blue-600 " id="active">Contact</a>
+        </div>
+    </nav>
+  </header>
+  
+  <section class="w-full h-[40vh] contact">
+  </section>
+
+  <section class="max-w-7xl mx-auto px-6 py-10">
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-center mb-16 text-teal-400">Contactez-Nous</h1>
+
+    <!-- Bloc coordonnées -->
+    <div class="w-full bg-white p-10 rounded-2xl shadow-2xl space-y-6 mb-16 max-w-[1200px] mx-auto">
+      <h2 class="text-2xl font-bold mb-4 text-black">Nos coordonnées</h2>
+      <p class="text-black"><strong>📍 Adresse :</strong> Abidjan, Côte d'Ivoire</p>
+      <p><strong class="text-black">📞 Téléphone :</strong> <a href="tel:+2250123456789" class="text-teal-400 hover:underline">+225 01 23 45 67 89</a></p>
+      <p><strong class="text-black">✉️ Email :</strong> <a href="mailto:contact@haveelapharma.com" class="text-teal-400 hover:underline">contact@haveelapharma.com</a></p>
+      <p class="text-black"><strong>🕒 Horaires :</strong> Lundi à Vendredi, 08h00 - 17h00</p>
+
+      <div class="mt-8">
+        <iframe class="w-full h-80 rounded-xl border-0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.556676797441!2d-4.010451085736222!3d5.348646396133961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebc014e246cd%3A0x1fcf36e6a8420de!2sAbidjan!5e0!3m2!1sfr!2sci!4v1616588399565"
+          allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Bloc formulaire -->
+    <div class="w-full">
+      <form class="bg-white p-10 rounded-2xl shadow-2xl space-y-6 max-w-[1200px] mx-auto">
+        <h2 class="text-2xl font-bold mb-4 text-black">Envoyez-nous un message</h2>
+
+        <div>
+          <label for="name" class="block mb-1 font-medium text-black">Nom complet</label>
+          <input type="text" id="name" name="name" required
+                 class="w-full px-4 py-3 bg-gray-100 text-black rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-400" />
+        </div>
+
+        <div>
+          <label for="email" class="block mb-1 font-medium text-black">Email</label>
+          <input type="email" id="email" name="email" required
+                 class="w-full px-4 py-3 bg-gray-100 text-black rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-400" />
+        </div>
+
+        <div>
+          <label for="subject" class="block mb-1 font-medium text-black">Sujet</label>
+          <input type="text" id="subject" name="subject"
+                 class="w-full px-4 py-3 bg-gray-100 text-black rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-400" />
+        </div>
+
+        <div>
+          <label for="message" class="block mb-1 font-medium text-black">Message</label>
+          <textarea id="message" name="message" rows="6" required
+                    class="w-full px-4 py-3 bg-gray-100 text-black rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-400"></textarea>
+        </div>
+
+        <button type="submit"
+                class="bg-teal-500 text-white py-3 px-6 rounded-xl hover:bg-teal-600 transition font-semibold">
+          Envoyer le message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-8 sm:py-6">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between">
+      <div>
+        <h3 class="text-xl sm:text-lg font-semibold">Contactez-nous</h3>
+        <p>Email: contact@haveelapharma.com</p>
+        <p>Téléphone: +225 01 23 45 67 89</p>
+      </div>
+      <div class="flex space-x-6 sm:space-x-8 mt-6 sm:mt-0">
+        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+        <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <p>&copy; 2025 Entreprise, Inc. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

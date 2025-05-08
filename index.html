@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="style.css">
   <title>Haveela Pharma</title>
 </head>
-<body class="bg-gray-100 overflow-x-hidden ">
+<body class="bg-white overflow-x-hidden ">
+  <div id="bubble-container"></div>
 
-  <header class="sticky top-0 left-0 z-50 ">
-    <nav id="nav" class="bg-[#4a86b0] shadow-md w-full py-4">
+  <header class="sticky top-0 left-0 z-30 ">
+    <nav id="nav" class="bg-[#4a86b0] shadow-md w-full py-2">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16 items-center">
           
@@ -23,11 +24,13 @@
           <!-- Menu normal -->
           <div class="hidden md:flex flex-1 justify-center space-x-8">
             <a href="#" class="text-white hover:text-white " id="active">Accueil</a>
-            <a href="#" class="text-white hover:text-white ">Services</a>
+            <a href="Services.html" class="text-white hover:text-white ">Services</a>
             <a href="Produits.html" class="text-white hover:text-white ">Produits</a>
             <a href="#" class="text-white hover:text-white ">À propos</a>
-            <a href="#" class="text-white hover:text-white ">Contact</a>
+            <a href="contact.html" class="text-white hover:text-white ">Contact</a>
           </div>
+
+          <p id="heure" class="text-white text-lg font-mono"></p>
   
           <!-- Bouton hamburger / croix -->
           <div class="md:hidden">
@@ -51,28 +54,28 @@
       <!-- Menu mobile -->
       <div id="menu" class="overflow-hidden max-h-0 md:hidden px-4 bg-white text-center">
           <a href="#" class="block text-gray-400 py-2 hover:text-blue-600 " id="active">Accueil</a>
-          <a href="#" class="block text-gray-400 py-2 hover:text-blue-600 ">Services</a>
+          <a href="Services.html" class="block text-gray-400 py-2 hover:text-blue-600 ">Services</a>
           <a href="Produits.html" class="block text-gray-400 py-2 hover:text-blue-600 ">Produits</a>
           <a href="#" class="block text-gray-400 py-2 hover:text-blue-600 ">À propos</a>
-          <a href="#" class="block text-gray-400 py-2 hover:text-blue-600 ">Contact</a>
+          <a href="Contact.html" class="block text-gray-400 py-2 hover:text-blue-600 ">Contact</a>
         </div>
     </nav>
   </header>
 
   <section id="hero" class="cover1">
-    <div id="flooter" class="">
+    <div id="flooter_index">
       <!-- Texte à droite -->
-      <div class="bg-[rgba(0,0,0,0.3)] max-w-3xl p-6 rounded-lg flex flex-col items-center">
-        <h1 id="infosup" class="text-6xl text-gray-100 text-center">Nous vous offrons <br> des solutions sur mesure</h1>
-        <p class="text-center text-white m-4 text-3xl ">HAVEELA Pharma est spécialisée dans la représentation pharmaceutique et la promotion médicale. Présente en Afrique de l'ouest: à Abidjan en Cote d’Ivoire .</p>
-        <a id="CTA" href="#services" class="text-2xl bg-blue-500 rounded-2xl p-4 px-8 text-white hover:bg-orange-700">Découvrir nos services</a>
+      <div class="bg-[rgba(0,0,0,)] max-w-3xl p-6 rounded-lg flex flex-col items-center">
+        <h1  class="text-6xl text-gray-100 text-center mb-12">Nous vous offrons <br> des solutions sur mesure</h1>
+        <!-- <p class="text-center text-white m-4 text-3xl ">HAVEELA Pharma est spécialisée dans la représentation pharmaceutique et la promotion médicale. Présente en Afrique de l'ouest: à Abidjan en Cote d’Ivoire .</p> -->
+        <a id="CTA" href="#services" class="text-2xl bg-orange-700 rounded-2xl p-4 px-8 text-white hover:bg-blue-500">Découvrir nos services</a>
       </div>
     </div>
   </section>
 
   <!-- Section A propos -->
 
-  <section class="bg-[#b5c7d4] text-black py-24 px-6 sm:px-10">
+  <section class="bg-white text-black py-24 px-6 sm:px-10">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
   
       <!-- Image à gauche -->
@@ -91,7 +94,7 @@
           HAVEELA Pharma s'engage à transformer le paysage pharmaceutique avec des solutions innovantes, personnalisées et fiables.
           Notre mission est d’accompagner les professionnels de santé à chaque étape de leur croissance, tout en contribuant au bien-être des populations.
         </p>
-        <a href="Produits.html" class="inline-block bg-cyan-600 hover:bg-cyan-500 text-white px-8 border-[#e9ef33] border-solid border-2 py-4 text-lg rounded-xl shadow-lg transition-all duration-300">
+        <a href="Produits.html" class="inline-block bg-cyan-600 hover:bg-cyan-500 text-white px-8 py-4 text-lg rounded-xl shadow-lg transition-all duration-300">
           Voir nos produits
         </a>
       </div>
@@ -100,53 +103,51 @@
 
   <!-- Section A propos -->
   
-  <section class="bg-gray-950 text-white py-12 px-6 space-y-32">
+  <section class="bg-white text-white py-12 px-6 space-y-32">
     <!-- Titre principal -->
-    <div class="max-w-7xl mx-auto text-center mb-4">
-      <h2 class="text-4xl sm:text-5xl font-extrabold mb-6">Notre Expertise</h2>
-      <p class="text-gray-400 text-lg">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-4xl sm:text-5xl font-extrabold mb-6 text-black">Notre Expertise</h2>
+      <p class="text-black text-lg">
         Des solutions fiables, innovantes et adaptées à vos besoins pharmaceutiques
       </p>
     </div>
   
     <!-- Bloc 1 -->
-    <div class="max-w-6xl mx-auto my-12 flex flex-col md:flex-row items-center gap-12">
+    <div class="max-w-6xl mx-auto my-12 flex flex-col md:flex-row items-center gap-12 border-b-8 border-dotted-yellow  pb-12">
       <img src="IMG/expertise1.jpg" alt="Recherche" class="rounded-2xl w-full md:w-1/2 shadow-lg hover:scale-105 transition duration-500 ease-in-out">
       <div class="md:w-1/2">
-        <h3 class="text-3xl font-bold text-cyan-400 mb-4">L’Excellence Guidée par l’Expérience</h3>
-        <p class="text-gray-300 text-lg md:text-2xl">
+        <h3 class="text-3xl font-bold text-gray-800 mb-4">L’Excellence Guidée par l’Expérience</h3>
+        <p class="text-lg md:text-2xl text-black">
           Maitrise du marketing pharmaceutique et de la santé publique à travers notre expérience professionnelle.
         </p>
       </div>
     </div>
   
     <!-- Bloc 2 -->
-    <div class="max-w-6xl mx-auto my-12 flex flex-col md:flex-row-reverse items-center gap-12">
+    <div class="max-w-6xl mx-auto my-12 flex flex-col md:flex-row-reverse items-center gap-12 border-b-8 border-dotted-yellow  pb-12">
       <img src="IMG/expertise2.jpg" alt="Distribution" class="rounded-2xl w-full md:w-1/2 shadow-lg hover:scale-105 transition duration-500 ease-in-out">
       <div class="md:w-1/2">
-        <h3 class="text-3xl font-bold text-cyan-400 mb-4">Maîtrise Totale du Circuit du Médicament en Côte d’Ivoire</h3>
-        <p class="text-white-300 text-lg md:text-2xl">
+        <h3 class="text-3xl font-bold text-cyan-400 mb-4 text-gray-800">Maîtrise Totale du Circuit du Médicament en Côte d’Ivoire</h3>
+        <p class="text-black text-lg md:text-2xl">
           Maitrise de tous les aspect du circuit du médicament en cote d’ivoire.
         </p>
       </div>
     </div>
   
     <!-- Bloc 3 -->
-    <div class="max-w-6xl mx-auto my-12 flex flex-col md:flex-row items-center gap-12">
+    <div class="max-w-6xl mx-auto my-12 flex flex-col md:flex-row items-center gap-12 border-b-8 border-dotted-yellow  pb-12">
       <img src="IMG/expertise3.jpg" alt="Support" class="rounded-2xl w-full md:w-1/2 shadow-lg hover:scale-105 transition duration-500 ease-in-out">
       <div class="md:w-1/2">
-        <h3 class="text-3xl font-bold text-cyan-400 mb-4">La Fluidité de l’Approvisionnement, Notre Force</h3>
-        <p class="text-gray-300 text-lg md:text-2xl">
+        <h3 class="text-3xl font-bold text-cyan-400 mb-4 text-gray-800">La Fluidité de l’Approvisionnement, Notre Force</h3>
+        <p class="text-black text-lg md:text-2xl">
           Maitrise de la chaine approvisionnement des produits de santé et des cosmétiques.
         </p>
       </div>
     </div>
   </section>
   
-  
-
   <!-- Section coordonnées & réseaux -->
-  <section class=" text-center text-white bg-[#a30006]">
+  <section class=" text-center text-white bg-gray-950 py-8">
   <h2 class="text-2xl sm:text-3xl font-bold mb-6">Contactez-nous</h2>
   <div class="flex justify-evenly">
     <div class="text-gray-300 text-sm mb-4 space-y-2">
@@ -176,77 +177,13 @@
   </div>
   </section>
 
-  <section id="gallery" class="overflow-hidden py-16">
-    <div id="translate" class="flex flex-col gap-6">
-        <div class="flex gap-8 -translate-x-40">
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-        </div>
-        <div class="flex gap-8">
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-            <div class="min-h-[150px] min-w-[400px] bg-[#666662] rounded-xl p-1">
-                <img src="" alt="forum">
-            </div>
-        </div>
-    </div>
-
-  </section>
-
   <section id="actualites" class="py-16 sm:py-24 bg-gray-100">
     <div class="max-w-7xl mx-auto px-6 sm:px-12 text-center">
-      <h2 class="text-3xl sm:text-4xl font-semibold mb-12">Dernières Actualités</h2>
+      <h2 class="text-3xl sm:text-4xl font-semibold mb-12">Actualités</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         <!-- Article 1 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="image-article-1.jpg" alt="Article 1" class="w-full h-48 object-cover">
+        <div class="bg-white overflow-hidden border-t-4 border-gray-800 border-solid ">
+          <img src="https://img.freepik.com/free-photo/company-employee-presenting-business-strategy-with-charts-monitor-planning-project-workmates-analyzing-financial-statistics-display-working-together-company-development_482257-37174.jpg?t=st=1746706052~exp=1746709652~hmac=d657630d95e0ef5621ff2386c3e874aedd6df2c43f590522f22907552f1402aa&w=1380" alt="Article 1" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-4">Titre de l'actualité 1</h3>
             <p class="text-gray-700 mb-4">Description courte de l'actualité 1. Cela peut être une introduction à l'article complet, invitant les utilisateurs à en savoir plus.</p>
@@ -254,8 +191,8 @@
           </div>
         </div>
         <!-- Article 2 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="image-article-2.jpg" alt="Article 2" class="w-full h-48 object-cover">
+        <div class="bg-white overflow-hidden border-t-4 border-gray-800 border-solid">
+          <img src="https://img.freepik.com/free-photo/company-employee-presenting-business-strategy-with-charts-monitor-planning-project-workmates-analyzing-financial-statistics-display-working-together-company-development_482257-37174.jpg?t=st=1746706052~exp=1746709652~hmac=d657630d95e0ef5621ff2386c3e874aedd6df2c43f590522f22907552f1402aa&w=1380" alt="Article 2" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-4">Titre de l'actualité 2</h3>
             <p class="text-gray-700 mb-4">Description courte de l'actualité 2. Un aperçu intéressant pour attirer l'attention des visiteurs.</p>
@@ -263,8 +200,8 @@
           </div>
         </div>
         <!-- Article 3 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="image-article-3.jpg" alt="Article 3" class="w-full h-48 object-cover">
+        <div class="bg-white overflow-hidden border-t-4 border-gray-800 border-solid">
+          <img src="https://img.freepik.com/free-photo/company-employee-presenting-business-strategy-with-charts-monitor-planning-project-workmates-analyzing-financial-statistics-display-working-together-company-development_482257-37174.jpg?t=st=1746706052~exp=1746709652~hmac=d657630d95e0ef5621ff2386c3e874aedd6df2c43f590522f22907552f1402aa&w=1380" alt="Article 3" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-4">Titre de l'actualité 3</h3>
             <p class="text-gray-700 mb-4">Description courte de l'actualité 3. Un résumé bref avec un lien pour plus d'informations.</p>
@@ -276,7 +213,7 @@
   </section>
 
 
-  <section class="py-16 sm:py-24 bg-gray-100">
+  <section class="pb-16 sm:pb-24 bg-gray-100">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-semibold mb-8">Notre équipe</h2>
       <p class="text-lg text-gray-700 mb-12">Voici les membres passionnés qui composent notre équipe et contribuent à notre succès.</p>
@@ -284,7 +221,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
         <!-- Employee 1 -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="path/to/photo1.jpg" alt="Nom de l'employé 1" class="w-full h-56 object-cover">
+          <img src="https://img.freepik.com/free-photo/businesswoman-executive-professional-success-concept_53876-137644.jpg?t=st=1746706366~exp=1746709966~hmac=2051dbac8f0ae8a0886d1e32c2f43f72e7775abd33fdf2624482713f9671a805&w=1380" alt="Nom de l'employé 1" class="w-full h-56 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Nom de l'Employé 1</h3>
             <p class="text-gray-600 mb-4">Titre du poste</p>
@@ -294,7 +231,7 @@
   
         <!-- Employee 2 -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="path/to/photo2.jpg" alt="Nom de l'employé 2" class="w-full h-56 object-cover">
+          <img src="https://img.freepik.com/free-photo/little-girl-standing-with-crossed-arms-t-shirt-jacket-looking-cheerful_176474-19185.jpg?t=st=1746706491~exp=1746710091~hmac=072c2132caab779534e5eff907cebd8d1a36a0465f4ce011e2d4183ba9462c54&w=1380" alt="Nom de l'employé 2" class="w-full h-56 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Nom de l'Employé 2</h3>
             <p class="text-gray-600 mb-4">Titre du poste</p>
@@ -304,7 +241,7 @@
   
         <!-- Employee 3 -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="path/to/photo3.jpg" alt="Nom de l'employé 3" class="w-full h-56 object-cover">
+          <img src="https://img.freepik.com/free-photo/displeased-young-caucasian-businesswoman-with-crossed-arms_1262-17013.jpg?t=st=1746706532~exp=1746710132~hmac=9e96c7a537a8e5cc97e351b2fdb23dd87b457f359e656d35c7a39034b1862924&w=1380" alt="Nom de l'employé 3" class="w-full h-56 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Nom de l'Employé 3</h3>
             <p class="text-gray-600 mb-4">Titre du poste</p>
@@ -314,7 +251,7 @@
   
         <!-- Employee 4 -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="path/to/photo4.jpg" alt="Nom de l'employé 4" class="w-full h-56 object-cover">
+          <img src="https://img.freepik.com/free-photo/beautiful-business-woman-portrait_23-2149280695.jpg?t=st=1746706571~exp=1746710171~hmac=fc2b471ecaba4f07ec0a8643ccf4cdb9e4e81bfec11096e13a595c0d4582f328&w=1380" alt="Nom de l'employé 4" class="w-full h-56 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Nom de l'Employé 4</h3>
             <p class="text-gray-600 mb-4">Titre du poste</p>
@@ -324,7 +261,7 @@
   
         <!-- Employee 5 -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="path/to/photo5.jpg" alt="Nom de l'employé 5" class="w-full h-56 object-cover">
+          <img src="https://img.freepik.com/free-photo/business-man-smiling-portrait_23-2149280773.jpg?t=st=1746706616~exp=1746710216~hmac=786c0b69c123da39e7c04fb312b19e80e4a9d1cfbb6fd606bfd5e4cc71e45720&w=1380" alt="Nom de l'employé 5" class="w-full h-56 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Nom de l'Employé 5</h3>
             <p class="text-gray-600 mb-4">Titre du poste</p>
@@ -334,7 +271,7 @@
   
         <!-- Employee 6 -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="path/to/photo6.jpg" alt="Nom de l'employé 6" class="w-full h-56 object-cover">
+          <img src="https://img.freepik.com/free-photo/businesswoman-executive-professional-success-concept_53876-137644.jpg?t=st=1746706366~exp=1746709966~hmac=2051dbac8f0ae8a0886d1e32c2f43f72e7775abd33fdf2624482713f9671a805&w=1380" alt="Nom de l'employé 6" class="w-full h-56 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Nom de l'Employé 6</h3>
             <p class="text-gray-600 mb-4">Titre du poste</p>
@@ -350,16 +287,9 @@
       <h2 class="text-3xl sm:text-2xl font-semibold mb-8">Ce que nos clients disent</h2>
       <div class="flex flex-wrap justify-center space-x-8 sm:space-x-0 sm:space-y-8">
         <div class="bg-white p-6 rounded-lg shadow-lg w-72 sm:w-full">
-          <p class="text-lg text-gray-700 mb-4">"Un service exceptionnel, très professionnel !"</p>
+          <p class="text-lg text-gray-700 mb-2">"Un service exceptionnel, très professionnel !"</p>
+          <p class="text-gray-800 mb-2">&#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</p>
           <p class="font-bold text-gray-800">Client 1</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg w-72 sm:w-full">
-          <p class="text-lg text-gray-700 mb-4">"L'équipe a su répondre à toutes mes attentes."</p>
-          <p class="font-bold text-gray-800">Client 2</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg w-72 sm:w-full">
-          <p class="text-lg text-gray-700 mb-4">"Je recommande vivement leurs services !" </p>
-          <p class="font-bold text-gray-800">Client 3</p>
         </div>
       </div>
     </div>
@@ -367,34 +297,35 @@
 
     <!-- Bulle flottante -->
   <div id="contact-bubble"
-    class="fixed bottom-[50%] right-4 bg-[#0013a3] text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl cursor-pointer shadow-lg hover:bg-blue-700 transition duration-300 z-50">
-  ?
+    class="fixed bottom-[50%] text-black flex items-center justify-center text-2xl cursor-pointer z-40">
+    <p class="px-10 py-10 rounded-2xl border-l-8 border-gray-900 bg-white transition duration-300 shadow-lg">contactez-nous !</p>
   </div>
 
   <section>
     <!-- Fenêtre de contact -->
       <div id="contact-form"
-        class="fixed bottom-24 right-4 w-11/12 max-w-sm bg-gray-950 shadow-lg rounded-xl p-4 pt-12 space-y-3 border border-gray-200 transform scale-95 opacity-0 transition-all duration-300 ease-in-out pointer-events-none z-40">
+          class="fixed bottom-0 right-4  w-11/12 max-w-sm bg-gray-950 shadow-lg rounded-xl p-4 pt-12 space-y-3 border border-gray-200 transform scale-95 opacity-0 transition-all duration-300 ease-in-out pointer-events-none z-100">
 
-      <!-- Bouton fermer -->
-      <button id="close-btn"
-              class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-xl font-bold">
-        &times;
-      </button>
+        <!-- Bouton fermer -->
+        <button id="close-btn"
+                class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-xl font-bold">
+          &times;
+        </button>
 
-      <h3 class="text-lg font-semibold text-center text-white mb-18"> Laissez nous un message </h3>
-      <input type="text" placeholder="Votre nom"
-              class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
-      <input type="email" placeholder="Votre email"
-              class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
-      <textarea placeholder="Votre message"
-                class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm h-24 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-      <button
-        class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-300">
-        Envoyer
-      </button>
-    </div>
+        <h3 class="text-lg font-semibold text-center text-white mb-18"> Laissez nous un message </h3>
+        <input type="text" placeholder="Votre nom"
+                class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        <input type="email" placeholder="Votre email"
+                class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        <textarea placeholder="Votre message"
+                  class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm h-24 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        <button
+          class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-300">
+          Envoyer
+        </button>
+      </div>
   </section>
+
   
   
   <footer class="bg-gray-800 text-white py-8 sm:py-6">

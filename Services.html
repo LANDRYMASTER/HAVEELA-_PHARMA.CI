@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nos Services – HAVEELA Pharma</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#d3d5d1] text-white">
+
+  <header class="sticky top-0 left-0 z-50 ">
+    <nav id="nav" class="bg-[#4a86b0] shadow-md w-full py-2">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          
+          <!-- Logo -->
+          <div class="flex-shrink-0 flex justify-center items-center">
+            <img id="logo" src="IMG/logo.png" alt="Logo Entreprise">
+            <a href="#" class="text-2xl font-bold text-white">Haveela Pharma</a>
+          </div>
+  
+          <!-- Menu normal -->
+          <div class="hidden md:flex flex-1 justify-center space-x-8">
+            <a href="index.html" class="text-white hover:text-white ">Accueil</a>
+            <a href="#" class="text-white hover:text-white " id="active">Services</a>
+            <a href="Produits.html" class="text-white hover:text-white">Produits</a>
+            <a href="#" class="text-white hover:text-white ">À propos</a>
+            <a href="contact.html" class="text-white hover:text-white " >Contact</a>
+          </div>
+
+          <p id="heure" class="text-white text-lg font-mono"></p>
+  
+          <!-- Bouton hamburger / croix -->
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-gray-700 focus:outline-none">
+              <!-- Icône menu -->
+              <svg id="menu-open" class="h-6 w-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!-- Icône croix -->
+              <svg id="menu-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+  
+        </div>
+      </div>
+  
+      <!-- Menu mobile -->
+      <div id="menu" class="overflow-hidden max-h-0 md:hidden px-4 bg-white text-center">
+          <a href="index.html" class="block text-gray-400 py-2 hover:text-blue-600 " >Accueil</a>
+          <a href="#" class="block text-gray-400 py-2 hover:text-blue-600 " id="active">Services</a>
+          <a href="Produits.html" class="block text-gray-400 py-2 hover:text-blue-600 ">Produits</a>
+          <a href="#" class="block text-gray-400 py-2 hover:text-blue-600 ">À propos</a>
+          <a href="Contact.html" class="block text-gray-400 py-2 hover:text-blue-600 ">Contact</a>
+        </div>
+    </nav>
+  </header>
+
+  <!-- Titre principal -->
+  <section id="flooter_services" class="">
+    <h1 class="text-5xl font-extrabold mb-6 shine text-center py-36 text-gray-900 ">Nos Services</h1>
+    <p class="text-lg max-w-2xl mx-auto text-center my-12 text-black">Des solutions innovantes, fiables et personnalisées pour les professionnels de la santé et de la cosmétique en Côte d'Ivoire.</p>
+  </section>
+
+  <!-- Grille des services -->
+  <section class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pb-24">
+
+    <!-- Carte service 1 -->
+    <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300 group">
+      <img src="https://source.unsplash.com/400x250/?pharmacy" alt="Service 1" class="w-full h-56 object-cover">
+      <div class="p-6">
+        <h3 class="text-2xl font-bold mb-2 group-hover:text-teal-400">Distribution de médicaments</h3>
+        <p class="text-gray-400 mb-4">Logistique pharmaceutique sécurisée et efficace pour une couverture nationale.</p>
+        <a href="#" class="text-sm text-teal-400 hover:underline">Voir plus</a>
+      </div>
+    </div>
+
+    <!-- Carte service 2 -->
+    <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300 group">
+      <img src="https://source.unsplash.com/400x250/?doctor,regulation" alt="Service 2" class="w-full h-56 object-cover">
+      <div class="p-6">
+        <h3 class="text-2xl font-bold mb-2 group-hover:text-teal-400">Conseil en réglementation</h3>
+        <p class="text-gray-400 mb-4">Accompagnement professionnel dans les démarches réglementaires du secteur pharmaceutique.</p>
+        <a href="#" class="text-sm text-teal-400 hover:underline">Voir plus</a>
+      </div>
+    </div>
+
+    <!-- Carte service 3 -->
+    <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300 group">
+      <img src="https://source.unsplash.com/400x250/?cosmetics,beauty" alt="Service 3" class="w-full h-56 object-cover">
+      <div class="p-6">
+        <h3 class="text-2xl font-bold mb-2 group-hover:text-teal-400">Approvisionnement cosmétique</h3>
+        <p class="text-gray-400 mb-4">Des produits de beauté et bien-être sélectionnés et livrés avec fiabilité.</p>
+        <a href="#" class="text-sm text-teal-400 hover:underline">Voir plus</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Pourquoi Nous Choisir -->
+  <section class="bg-[#b5c7d4] py-24 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-4xl font-extrabold mb-6 text-gray-800">Pourquoi choisir HAVEELA Pharma ?</h2>
+        <p class="mb-6 text-black">Notre expertise s’appuie sur des années de terrain, un réseau solide de partenaires, et une parfaite connaissance du circuit pharmaceutique en Côte d’Ivoire.</p>
+        <ul class="space-y-4 text-black">
+          <li>✅ Maîtrise du marketing pharmaceutique et de la santé publique</li>
+          <li>✅ Maîtrise de tous les aspects du circuit du médicament en Côte d’Ivoire</li>
+          <li>✅ Maîtrise de la chaîne d’approvisionnement des produits de santé et cosmétiques</li>
+        </ul>
+      </div>
+      <div>
+        <img src="https://source.unsplash.com/600x400/?healthcare,team" alt="Pourquoi nous choisir" class="rounded-2xl shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-8 sm:py-6">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between">
+      <div>
+        <h3 class="text-xl sm:text-lg font-semibold">Contactez-nous</h3>
+        <p>Email: contact@haveelapharma.com</p>
+        <p>Téléphone: (+225) 2721390637</p>
+      </div>
+      <div class="flex space-x-6 sm:space-x-8 mt-6 sm:mt-0">
+        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+        <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <p>&copy; 2025 Entreprise, Inc. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
