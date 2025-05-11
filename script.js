@@ -12,12 +12,17 @@ const closeBtn = document.getElementById("close-btn");
 const links = document.querySelectorAll('.nav-link');
 const nav = document.querySelector('nav');
 const container = document.getElementById('bubble-container');
+const body = document.querySelector('body');
 
 let index = 0;
 let isOpen = false;
 
+const currentFile = window.location.pathname.split("/").pop();
+console.log("Fichier actuel :", currentFile);
 
-window.addEventListener('scroll', function () {
+if (currentFile === "index.html") {
+
+  window.addEventListener('scroll', function () {
     if (window.scrollY >=180 &&  window.scrollY <= 1300) {
         Img_propos.classList.remove('Imgpropos');
     }else {
@@ -32,32 +37,8 @@ window.addEventListener('scroll', function () {
       nav.classList.remove('bg-[#4a85b099]');
       nav.classList.add('bg-[#4a86b0]');
     }
-});
-
-btn.addEventListener('click', () => {
-    if (menu.classList.contains('max-h-0')) {
-    menu.classList.remove('max-h-0');
-    menu.classList.add('max-h-screen');
-    menuOpenIcon.classList.add('hidden');
-    menuCloseIcon.classList.remove('hidden');
-    } else {
-    menu.classList.remove('max-h-screen');
-    menu.classList.add('max-h-0');
-    menuOpenIcon.classList.remove('hidden');
-    menuCloseIcon.classList.add('hidden');
-    }
-});
-
-function afficherHeure() {
-    const maintenant = new Date();
-    const heure = maintenant.toLocaleTimeString();
-    document.querySelector('#heure').textContent = heure;
-  }
-
-setInterval(afficherHeure, 1000);
-afficherHeure();
-
-function changerImage() {
+  });
+  function changerImage() {
         section.classList.remove(section.getAttribute("class"));
         section.classList.add(images[index]);
         index = (index + 1) % images.length;
@@ -103,4 +84,39 @@ function createBubble() {
 
 // Créer une bulle toutes les 300ms
 setInterval(createBubble, 500);
+}
+
+btn.addEventListener('click', () => {
+    if (menu.classList.contains('max-h-0')) {
+    menu.classList.remove('max-h-0');
+    menu.classList.add('max-h-screen');
+    menuOpenIcon.classList.add('hidden');
+    menuCloseIcon.classList.remove('hidden');
+    } else {
+    menu.classList.remove('max-h-screen');
+    menu.classList.add('max-h-0');
+    menuOpenIcon.classList.remove('hidden');
+    menuCloseIcon.classList.add('hidden');
+    }
+});
+
+function afficherHeure() {
+    const maintenant = new Date();
+    const heure = maintenant.toLocaleTimeString();
+    document.querySelector('#heure').textContent = heure;
+  }
+
+setInterval(afficherHeure, 1000);
+afficherHeure();
+
+
+window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      const splash = document.getElementById("splash-screen");
+      splash.classList.add("opacity-0");
+      setTimeout(() => { 
+        splash.classList.add('hide');
+      }, 500); // disparaît après 0.5s
+    }, 2000); // visible pendant 2s
+  });
 

@@ -41,7 +41,39 @@
   </head>
   
 
-<body class="bg-[#d3d5d1] text-white">
+<body class="bg-[#d3d5d1] text-white overflow-y-auto">
+
+  <!-- Topbar informations -->
+  <section class="bg-[#174d74] text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+      
+      <!-- Téléphone à gauche -->
+      <div class="flex items-center space-x-2">
+        <span>📞</span>
+        <span>+225 01 23 45 67 89</span>
+      </div>
+
+      <!-- Email au centre -->
+      <div class="flex items-center space-x-2">
+        <span>📧</span>
+        <span>contact@haveela.ci</span>
+      </div>
+
+      <!-- Réseaux sociaux à droite -->
+      <div class="flex items-center space-x-4">
+        <a href="#" class="hover:text-gray-300 transition" aria-label="Facebook">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M22 12.07C22 6.56 17.52 2 12 2S2 6.56 2 12.07c0 4.96 3.66 9.07 8.44 9.88v-7h-2.54v-2.88H10.5V9.64c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.88h-2.34v7C18.34 21.13 22 17.03 22 12.07z"/></svg>
+        </a>
+        <a href="#" class="hover:text-gray-300 transition" aria-label="LinkedIn">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.6c0-1.34-.48-2.25-1.7-2.25-0.93 0-1.49.62-1.74 1.22-.09.22-.11.52-.11.83v5.8h-3.55V9h3.41v1.56h.05c.48-.77 1.34-1.86 3.25-1.86 2.38 0 4.17 1.56 4.17 4.89v6.86zM5.34 7.5c-1.14 0-1.89-.75-1.89-1.69 0-.96.77-1.69 1.94-1.69s1.89.73 1.91 1.69c0 .94-.75 1.69-1.96 1.69zM3.56 20.45h3.55V9H3.56v11.45z"/></svg>
+        </a>
+        <a href="#" class="hover:text-gray-300 transition" aria-label="Instagram">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.44.4a4.92 4.92 0 011.74 1.01 4.92 4.92 0 011.01 1.74c.16.47.35 1.27.4 2.44.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.44a4.92 4.92 0 01-1.01 1.74 4.92 4.92 0 01-1.74 1.01c-.47.16-1.27.35-2.44.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.44-.4a4.92 4.92 0 01-1.74-1.01 4.92 4.92 0 01-1.01-1.74c-.16-.47-.35-1.27-.4-2.44C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.44a4.92 4.92 0 011.01-1.74A4.92 4.92 0 015.4 2.67c.47-.16 1.27-.35 2.44-.4C8.42 2.21 8.8 2.2 12 2.2zm0 1.8c-3.14 0-3.5.01-4.73.07-1.02.05-1.57.22-1.93.37-.49.19-.84.42-1.21.79-.37.37-.6.72-.79 1.21-.15.36-.32.91-.37 1.93-.06 1.23-.07 1.59-.07 4.73s.01 3.5.07 4.73c.05 1.02.22 1.57.37 1.93.19.49.42.84.79 1.21.37.37.72.6 1.21.79.36.15.91.32 1.93.37 1.23.06 1.59.07 4.73.07s3.5-.01 4.73-.07c1.02-.05 1.57-.22 1.93-.37.49-.19.84-.42 1.21-.79.37-.37.6-.72.79-1.21.15-.36.32-.91.37-1.93.06-1.23.07-1.59.07-4.73s-.01-3.5-.07-4.73c-.05-1.02-.22-1.57-.37-1.93a3.06 3.06 0 00-.79-1.21 3.06 3.06 0 00-1.21-.79c-.36-.15-.91-.32-1.93-.37-1.23-.06-1.59-.07-4.73-.07zm0 3.87a5.93 5.93 0 110 11.86 5.93 5.93 0 010-11.86zm0 1.8a4.13 4.13 0 100 8.26 4.13 4.13 0 000-8.26zm5.7-.87a1.38 1.38 0 110 2.76 1.38 1.38 0 010-2.76z"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
 
   <header class="sticky top-0 left-0 z-50 ">
     <nav id="nav" class="bg-[#4a86b0] shadow-md w-full py-2">
@@ -56,11 +88,26 @@
   
           <!-- Menu normal -->
           <div class="hidden md:flex flex-1 justify-center space-x-8">
-            <a href="index.html" class="text-white hover:text-white ">Accueil</a>
-            <a href="#" class="text-white hover:text-white " id="active">Services</a>
-            <a href="Produits.html" class="text-white hover:text-white">Produits</a>
-            <a href="#" class="text-white hover:text-white ">À propos</a>
-            <a href="Contact.html" class="text-white hover:text-white " >Contact</a>
+            <a href="index.html" class="nav-item group">
+              <span class="relative z-10">Accueil</span>
+              <span class="nav-icon">🏠</span>
+            </a>
+            <a href="#" class="nav-item group" id="active">
+              <span class="relative z-10">Services</span>
+              <span class="nav-icon">🛠️</span>
+            </a>
+            <a href="Produits.html" class="nav-item group">
+              <span class="relative z-10">Produits</span>
+              <span class="nav-icon">💊</span>
+            </a>
+            <a href="#" class="nav-item group">
+              <span class="relative z-10">À propos</span>
+              <span class="nav-icon">ℹ️</span>
+            </a>
+            <a href="contact.html" class="nav-item group">
+              <span class="relative z-10">Contact</span>
+              <span class="nav-icon">📬</span>
+            </a>
           </div>
 
           <p id="heure" class="text-white text-lg font-mono"></p>
@@ -97,43 +144,117 @@
 
   <!-- Titre principal -->
   <section id="flooter_services" class="">
-    <h1 class="text-5xl font-extrabold mb-6 shine text-center py-36 text-gray-900 ">Nos Services</h1>
-    <p class="text-lg max-w-2xl mx-auto text-center my-12 text-black">Des solutions innovantes, fiables et personnalisées pour les professionnels de la santé et de la cosmétique en Côte d'Ivoire.</p>
+    <div class="text-5xl font-extrabold shine text-center py-36 text-gray-900 "></div>
   </section>
 
   <!-- Grille des services -->
-  <section class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pb-24">
+  <section class="bg-white py-24 relative">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-4xl md:text-5xl font-bold text-center text-[#4a86b0] mb-16 absolute -top-12 left-50% bg-white py-10 px-12 shadow-lg">Nos Services</h2>
+      <p class="text-lg max-w-2xl mx-auto text-center my-12 text-gray-700">Des solutions innovantes, fiables et personnalisées pour les professionnels de la santé et de la cosmétique en Côte d'Ivoire.</p>
 
-    <!-- Carte service 1 -->
-    <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300 group">
-      <img src="https://source.unsplash.com/400x250/?pharmacy" alt="Service 1" class="w-full h-56 object-cover">
-      <div class="p-6">
-        <h3 class="text-2xl font-bold mb-2 group-hover:text-teal-400">Distribution de médicaments</h3>
-        <p class="text-gray-400 mb-4">Logistique pharmaceutique sécurisée et efficace pour une couverture nationale.</p>
-        <a href="#" class="text-sm text-teal-400 hover:underline">Voir plus</a>
-      </div>
-    </div>
+      <div class="space-y-24">
+        
+        <!-- Service 1 -->
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="flex-shrink-0">
+            <img src="https://img.freepik.com/free-photo/job-position-beside-nurse_52683-107518.jpg?t=st=1746891270~exp=1746894870~hmac=2a8da2c75bfe5728a51eb92235978a4310c9f9e9c4cd2cb8d20dd29e251a19c0&w=1060" alt="Distribution pharmaceutique" class="w-12 h-12 mx-auto md:mx-0 rounded-md shadow-md">
+          </div>
+          <div>
+            <h3 class="text-3xl font-semibold text-gray-800 mb-4 border-r-4 border-gray-900">AFFAIRES REGLEMENTAIRES</h3>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Haveela Pharma assure la distribution de produits pharmaceutiques dans les meilleures conditions de rapidité et de sécurité. Grâce à un réseau logistique efficace et contrôlé, nous livrons les médicaments essentiels dans les délais impartis aux pharmacies, hôpitaux et structures sanitaires agréées.
+            </p>
+            <p class="text-base text-gray-500 mt-4">
+              Nos équipes veillent rigoureusement à la conservation des produits, au respect de la chaîne du froid quand nécessaire, et à la conformité réglementaire. Nous mettons un point d’honneur à garantir la traçabilité totale des lots livrés.
+            </p>
+          </div>
+        </div>
 
-    <!-- Carte service 2 -->
-    <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300 group">
-      <img src="https://source.unsplash.com/400x250/?doctor,regulation" alt="Service 2" class="w-full h-56 object-cover">
-      <div class="p-6">
-        <h3 class="text-2xl font-bold mb-2 group-hover:text-teal-400">Conseil en réglementation</h3>
-        <p class="text-gray-400 mb-4">Accompagnement professionnel dans les démarches réglementaires du secteur pharmaceutique.</p>
-        <a href="#" class="text-sm text-teal-400 hover:underline">Voir plus</a>
-      </div>
-    </div>
+        <!-- Service 2 -->
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="flex-shrink-0">
+            <img src="https://img.freepik.com/free-photo/job-position-beside-nurse_52683-107518.jpg?t=st=1746891270~exp=1746894870~hmac=2a8da2c75bfe5728a51eb92235978a4310c9f9e9c4cd2cb8d20dd29e251a19c0&w=1060" alt="Conseil et accompagnement" class="w-12 h-12 mx-auto md:mx-0 rounded-md shadow-md">
+          </div>
+          <div>
+            <h3 class="text-3xl font-semibold text-gray-800 mb-4 border-r-4 border-gray-900">MARKETING ET VENTES </h3>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Nous accompagnons nos partenaires dans la gestion de leurs flux pharmaceutiques : approvisionnement, optimisation des stocks, suivi des besoins spécifiques… Nos experts offrent un encadrement personnalisé pour assurer une organisation optimale.
+            </p>
+            <p class="text-base text-gray-500 mt-4">
+              Ce service est particulièrement utile pour les officines et cliniques souhaitant améliorer leur performance logistique tout en réduisant les pertes et les délais d’approvisionnement. Chaque structure bénéficie de recommandations adaptées à son volume et à ses contraintes.
+            </p>
+          </div>
+        </div>
 
-    <!-- Carte service 3 -->
-    <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300 group">
-      <img src="https://source.unsplash.com/400x250/?cosmetics,beauty" alt="Service 3" class="w-full h-56 object-cover">
-      <div class="p-6">
-        <h3 class="text-2xl font-bold mb-2 group-hover:text-teal-400">Approvisionnement cosmétique</h3>
-        <p class="text-gray-400 mb-4">Des produits de beauté et bien-être sélectionnés et livrés avec fiabilité.</p>
-        <a href="#" class="text-sm text-teal-400 hover:underline">Voir plus</a>
+        <!-- Service 3 -->
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="flex-shrink-0">
+            <img src="https://img.freepik.com/free-photo/job-position-beside-nurse_52683-107518.jpg?t=st=1746891270~exp=1746894870~hmac=2a8da2c75bfe5728a51eb92235978a4310c9f9e9c4cd2cb8d20dd29e251a19c0&w=1060" alt="Contrôle qualité" class="w-12 h-12 mx-auto md:mx-0 rounded-md shadow-md">
+          </div>
+          <div>
+            <h3 class="text-3xl font-semibold text-gray-800 mb-4 border-r-4 border-gray-900">SUPPORT LOGISTIQUE</h3>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Tous les produits distribués par Haveela Pharma sont minutieusement contrôlés avant mise à disposition. Nous collaborons avec des laboratoires certifiés pour garantir la conformité de chaque lot avec les normes sanitaires ivoiriennes et internationales.
+            </p>
+            <p class="text-base text-gray-500 mt-4">
+              Grâce à ce service, nos clients ont l’assurance de recevoir des produits sûrs, efficaces et parfaitement traçables. Nos audits internes réguliers permettent également d’améliorer constamment notre système de qualité.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 1 -->
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="flex-shrink-0">
+            <img src="https://img.freepik.com/free-photo/job-position-beside-nurse_52683-107518.jpg?t=st=1746891270~exp=1746894870~hmac=2a8da2c75bfe5728a51eb92235978a4310c9f9e9c4cd2cb8d20dd29e251a19c0&w=1060" alt="Distribution pharmaceutique" class="w-12 h-12 mx-auto md:mx-0 rounded-md shadow-md">
+          </div>
+          <div>
+            <h3 class="text-3xl font-semibold text-gray-800 mb-4 border-r-4 border-gray-900">SUPPORT A L'ACCES AU MARCHE</h3>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Haveela Pharma assure la distribution de produits pharmaceutiques dans les meilleures conditions de rapidité et de sécurité. Grâce à un réseau logistique efficace et contrôlé, nous livrons les médicaments essentiels dans les délais impartis aux pharmacies, hôpitaux et structures sanitaires agréées.
+            </p>
+            <p class="text-base text-gray-500 mt-4">
+              Nos équipes veillent rigoureusement à la conservation des produits, au respect de la chaîne du froid quand nécessaire, et à la conformité réglementaire. Nous mettons un point d’honneur à garantir la traçabilité totale des lots livrés.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="flex-shrink-0">
+            <img src="https://img.freepik.com/free-photo/job-position-beside-nurse_52683-107518.jpg?t=st=1746891270~exp=1746894870~hmac=2a8da2c75bfe5728a51eb92235978a4310c9f9e9c4cd2cb8d20dd29e251a19c0&w=1060" alt="Conseil et accompagnement" class="w-12 h-12 mx-auto md:mx-0 rounded-md shadow-md">
+          </div>
+          <div>
+            <h3 class="text-3xl font-semibold text-gray-800 mb-4 border-r-4 border-gray-900">DEPARTEMENT MARCHE INSTITUTIONNEL</h3>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Nous accompagnons nos partenaires dans la gestion de leurs flux pharmaceutiques : approvisionnement, optimisation des stocks, suivi des besoins spécifiques… Nos experts offrent un encadrement personnalisé pour assurer une organisation optimale.
+            </p>
+            <p class="text-base text-gray-500 mt-4">
+              Ce service est particulièrement utile pour les officines et cliniques souhaitant améliorer leur performance logistique tout en réduisant les pertes et les délais d’approvisionnement. Chaque structure bénéficie de recommandations adaptées à son volume et à ses contraintes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="flex-shrink-0">
+            <img src="https://img.freepik.com/free-photo/job-position-beside-nurse_52683-107518.jpg?t=st=1746891270~exp=1746894870~hmac=2a8da2c75bfe5728a51eb92235978a4310c9f9e9c4cd2cb8d20dd29e251a19c0&w=1060" alt="Contrôle qualité" class="w-12 h-12 mx-auto md:mx-0 rounded-md shadow-md">
+          </div>
+          <div>
+            <h3 class="text-3xl font-semibold text-gray-800 mb-4 border-r-4 border-gray-900">PHARMACOVIGILANCE</h3>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Tous les produits distribués par Haveela Pharma sont minutieusement contrôlés avant mise à disposition. Nous collaborons avec des laboratoires certifiés pour garantir la conformité de chaque lot avec les normes sanitaires ivoiriennes et internationales.
+            </p>
+            <p class="text-base text-gray-500 mt-4">
+              Grâce à ce service, nos clients ont l’assurance de recevoir des produits sûrs, efficaces et parfaitement traçables. Nos audits internes réguliers permettent également d’améliorer constamment notre système de qualité.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+
 
   <!-- Section Pourquoi Nous Choisir -->
   <section class="bg-[#b5c7d4] py-24 px-6">
@@ -152,6 +273,11 @@
       </div>
     </div>
   </section>
+
+   <!-- Écran d'accueil avec animation -->
+    <div id="splash-screen" class="fixed inset-0 bg-white flex items-center justify-center z-50">
+      <h1 class="text-[#4a86b0] text-5xl md:text-7xl font-bold animate-fadeInScale">HAVEELA</h1>
+    </div>
 
   <footer class="bg-gray-800 text-white py-8 sm:py-6">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between">

@@ -27,6 +27,14 @@ transition: max-height 0.3s ease-out;
     transition: 0.8s ease;
 }
 
+#heure {
+    transform: translateY(35px);
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 0 3px black;
+    color: black;
+}
+
 .cover1 {
     background: url(IMG/arriere\ plan\ 1.jpg);
 }
@@ -50,7 +58,7 @@ transition: max-height 0.3s ease-out;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0,);
 }
 
 #translate{
@@ -199,4 +207,64 @@ transition: max-height 0.3s ease-out;
       transform: translateY(-100vh);
     }
   }
-  
+
+
+.nav-item {
+position: relative;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-weight: 500;
+padding: 0.25rem 0.5rem; /* équivalent px-2 py-1 */
+}
+
+.nav-text {
+position: relative;
+z-index: 10;
+}
+
+.nav-icon {
+position: absolute;
+opacity: 0;
+transform: translate(-50%, -50%) scale(0);
+transition: all 0.5s ease;
+top: 0;
+left: 50%;
+z-index: 0;
+color: white;
+font-size: 1.25rem;
+}
+
+.group:hover .nav-icon {
+opacity: 1;
+transform: translate(-50%, -50%) scale(2);
+top: 150%;
+}
+
+.group:hover .nav-text {
+color: white;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-fadeInScale {
+  animation: fadeInScale 0.7s ease-out forwards infinite;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.border-gray-900 {
+    border-bottom: 2px dotted cornflowerblue;
+}
