@@ -103,7 +103,7 @@ function afficherHeure() {
     const maintenant = new Date();
     const heure = maintenant.toLocaleTimeString();
     document.querySelector('#heure').textContent = heure;
-  }
+}
 
 setInterval(afficherHeure, 1000);
 afficherHeure();
