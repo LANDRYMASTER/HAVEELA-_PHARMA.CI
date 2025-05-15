@@ -76,7 +76,6 @@ function createBubble() {
   bubble.style.left = `${Math.random() * window.innerWidth}px`;
   bubble.style.bottom = `0px`;
   container.appendChild(bubble);
-
   setTimeout(() => {
     bubble.remove();
   }, 5000);
@@ -108,7 +107,6 @@ function afficherHeure() {
 
 setInterval(afficherHeure, 1000);
 afficherHeure();
-
 
 window.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
